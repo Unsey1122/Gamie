@@ -1,0 +1,267 @@
+/* 30. Бүх элементийн зайг 0 (null) болгох.*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 18.HTML-Элементийг body гэх нэртэй элементийг зохиомжлох*/
+/* 22.HTML-Элементийг body гэх нэртэй зохиомжлох*/
+body {
+    background-color: #aa80ff;
+    /* Дэвсгэр өнгө */
+    color: #aa80ff;
+    /* Бичгийн өнгө */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    /* Үсгийн хэмжээ */
+}
+
+/* 19.id="wrapper"-тай div-ийг зохиомжлох*/
+div#wrapper {
+    background-color: #ddccff;
+    color: black;
+    /* 32. #wrapper-ийн өргөнийг тогтмол өргөнөөр тодорхойлох*/
+    width: 720px;
+    /*   33. #wrapper-ийг веб хуудасны төвд байрлуулах*/
+    margin-top: 10px;
+    margin-right: auto;
+    /* Баруун зай */
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+/* 20.id="headsection"-тай div-ийг зохиомжлох*/
+div#headsection {
+    background-color: #ffccff	;
+    color: black;
+    /* 37. Толгой хэсэгт дэвсгэр зургийг нэмж өгөх (Өөрөө зургийг сонгоно)*/
+    background-image: url(colorgradient.jpg);
+    /*-----------------------------------------------------------------------*/
+
+    /* 35. div-section-үүдийн дотоод зайг тодорхойлох*/
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
+    /*Дараах дүрмүүдийг нэг бүрчлэн туршиж үзнэ үү.*/
+    /*#headsection {
+    background-color: #ffe574;
+    background-image: url(colorgradient.jpg.jpg);
+    background-repeat: repeat-y; 
+    }
+    #headsection {
+    background-color: #ffe574;
+    background-image: url(colorgradient.jpg);
+    background-repeat: repeat-y;
+    background-position: left top;
+    }
+    background-position: center;
+    #headsection {
+    background-color: #ffe574;
+    background-image: url(colorgradient.jpg);
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-attachment: fixed;
+    }
+    #headsection {
+    background: #ffe574 url(farbverlauf.jpg) repeat-y left top;
+    }
+    */
+}
+
+/* 39. Хуудас удирдах хэсгийн зай болон гипер холбоосыг өөрчлөх */
+div#headsection p {
+    padding: 5px 0 5px 0;
+    margin-bottom: 0;
+    /* Өмнө нь 1em байсан */
+}
+
+div#navisection ul {
+    margin-bottom: 0;
+}
+
+div#navisection li {
+    display: inline;
+    list-style-type: none;
+    /*  43. Хуудас удирдах хэсэгт гипер холбоосыг бэлдэх */
+    margin: 0;
+    /* өмнө нь баруун талд 10px байсан */
+
+    /*: 0 10px 0 0;
+    /* баруун талд 10px, бусдаар 0 */
+}
+
+div#navisection a {
+    color: black;
+}
+
+/*   29. Уриан тодорх “Үндэс” гэсэн үгийг улаанаар тодруулах */
+div#headsection p span {
+    color: #990099;
+    /*  43. Хуудас удирдах хэсэгт гипер холбоосыг бэлдэх deed buland undes gesen ugnii gadna huree garj irne*/
+    background-color: #ff4dff;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid white;
+    /* Бичгийн өнгө */
+}
+
+/* 21.id="logo"-тай зургийг зохиомжлох*/
+div#headsection #logo {
+    /* 36. Толгой хэсгийн зургийг өнгө ашиглаж зохиомжлох, yronhiidoo huree oruulah*/
+    background-color: #ffccff;
+    color: black;
+    padding: 10px;
+    border: 10px solid #cc00cc;/*logonii gadnah hureeee back ongotei adil bolgosn tul haragdahq*/
+
+}
+
+div#navisection {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    /*42. Хуудас удирдах хэсгийг таб-д зориулан бэлдэх*/
+    text-align: right;
+    /* Баруун талд шахсан */
+    color: black;
+    background: #ffe574 url(colorgradient.jpg) repeat-y top left;
+    padding: 5px 10px 4px 10px;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*  40.41 Хуудас удирдах хэсэгт гипер холбоосыг нарийн тохируулах, oor huudas ruu shiljih ugen dr ocihod ulaan bolj hrgdna */
+div#navisection a:hover,
+div#navisection a:focus {
+    /*44. Хуудас удирдах хэсэг дэх холбоост Rollover-Effect оруулах */
+    /*---------------------------------------------------------------------------------------------------------------------------------------------*/
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+    /* Өмнө нь #d90000 байсан */
+    /*color: white;
+    background-color: #d90000;*/
+}
+
+div#navisection a:active {
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+}
+
+/*  26. Зочилсон болон зочлоогүй холбоосын өнгийг өөрчлөх */
+#navisection a:link {
+    color: #d90000;
+}
+
+#navisection a:visited {
+    color: black;
+}
+
+div#textsection {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/*  28. Гипер холбоосыг дахин доогуур нь зурах, гэхдээ зөвхөн бичвэр хэсэгт л. */
+div#textsection a {
+    border-bottom: 1px dotted #cc0000;
+}
+
+div#textsection a:hover,
+div#textsection a:focus {
+    border-bottom: 1px solid #d90000;
+}
+
+/*  34. #footsection-ийн дээд талын хүрээний шулуун үүсгэх*/
+div#footsection {
+    padding-top: 10px;
+    /* deer door shugamaanaasaa her ih zai avhiig*/
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    /* Хүрээний шугамын доор */
+    border-top: 1px solid #8c8c8c;
+    /* Дээд талын шулуун */
+    margin-top: 20px;
+    /* Шугамын дээд тал */
+    margin-top: 0;
+}
+
+
+
+
+
+
+/* 23.h1 болон h2 гэх нэртэй элементийг зохиомжлох */
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+/* 24. address гэх нэртэй HTML-Элементийг зохиомжлох*/
+address {
+    text-align: center;
+    /* төвд байрлуулах */
+    font-size: 80%;
+    /* Үлдэснээс арай жижигхэн */
+    font-style: italic;
+    /* Энгийн бичиг, налуу биш */
+    letter-spacing: 2px;
+    /* Үсэг хоорондын зай */
+    line-height: 1.5;
+    /* Мөр хоорондын зай, нэгж өгөөгүй */
+}
+
+/* 25. a гэх нэртэй элементийг зохиомжлох */
+a {
+    text-decoration: none;
+    /* доогуур зураасыг устгах */
+}
+
+/*  27. Гипер холбоосын хуудмаг классыг тодорхойлох */
+a:hover,
+a:focus {
+    border-bottom: 1px solid #d90000;
+}
+
+a:active {
+    color: white;
+    background-color: #d90000;
+}
+
+/* 31. Цогцолбор болон жагсаалтын зайг шинэчлэн засварлах.*/
+/* Доод талын зай */
+h2,
+p,
+ul,
+ol {
+    margin-bottom: 1em;
+}
+
+/* Зайгүй давхар жагсаалт */
+ul ul {
+    margin-bottom: 0;
+}
+
+/* Зүүн талын зай */
+li {
+    margin-left: 1em;
+}
+/*  45. Тухайн хуудас удирдах хэсэг сонголтыг харагдахуйцаар тодруулах */
+#startpage #navi01 a{
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+}
+#contactpage #navi02 a {
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+}
