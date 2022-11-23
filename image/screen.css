@@ -1,0 +1,37 @@
+div#wrapperk {
+    background-color: #d1bff7;
+    color: black;
+    /* 32. #wrapper-ийн өргөнийг тогтмол өргөнөөр тодорхойлох*/
+    width: 720px;
+    /*   33. #wrapper-ийг веб хуудасны төвд байрлуулах*/
+    margin-top: 10px;
+    margin-right: auto;
+    /* Баруун зай */
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+div#headseactionk {
+    background-color: #1a161a;
+    color: black;
+    padding: 10px;
+    border: 10px solid #ca88c5;/*logonii gadnah hureeee back ongotei adil bolgosn tul haragdahq*/
+    background-image: url(colorgradient.jpg);
+    /*-----------------------------------------------------------------------*/
+
+    /* 35. div-section-үүдийн дотоод зайг тодорхойлох*/
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
+}
+div#navisectionk{
+    color: black;
+    background-color: rgba(194, 99, 99, 0);
+    border-bottom-color: rgba(172, 18, 18, 0);
+}
+div#navisectionk{
+    #navisection a:link {
+        color: #d90000;
+    }
+
+}
